@@ -4,7 +4,7 @@ import { successResponse } from "../../Common/Response/response.js";
 import { authentication } from "../../Middleware/authentication.middleware.js";
 import { TokenType } from "../../Common/Enums/token.enum.js";
 import { UserRole } from "../../Common/Enums/user.enum.js";
-import { authorization } from "../../Middleware/Authorization.middleware.js";
+import { authorization } from "../../Middleware/authorization.middleware.js";
 import {
   allowedFormats,
   uploadLocal,
