@@ -34,7 +34,7 @@ async function bootstrap() {
     rateLimit({
       windowMs: 3 * 60 * 1000,
       limit: (req, res) => {
-        const ipInfo = geoip.lookup(req.ip);
+        const ipInfo = geoip.lookup(req.ip) || {};
         return ipInfo.country == "EG" ? 5 : 0;
       },
       legacyHeaders: false,
